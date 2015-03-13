@@ -13,7 +13,7 @@ namespace APRA.Context {
     public DbSet<Patient> Patients { get; set; }
     public DbSet<Caretaker> Caretakers { get; set; }
     public DbSet<Contact> Contacts { get; set; }
-    public DbSet<Monitor> Monitors { get; set; }
+    public DbSet<Permission> Permissions { get; set; }
     public DbSet<Task> Tasks { get; set; }
 
   }

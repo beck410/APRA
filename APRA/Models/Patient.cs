@@ -11,7 +11,6 @@ namespace APRA.Models {
     public int UserId;
     public string Location;
 
-    public Monitor Monitor { get; set; }
     public Contact Contact { get; set; }
     public Caretaker Caretaker { get; set; }
     public ICollection<Task> Tasks { get; set; }
