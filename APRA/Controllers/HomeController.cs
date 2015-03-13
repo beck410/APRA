@@ -9,9 +9,5 @@ namespace APRA.Controllers {
     public ActionResult Index() {
       return View();
     }
-  
-    public ActionResult App() {
-      return View();
-    }
   }
 }

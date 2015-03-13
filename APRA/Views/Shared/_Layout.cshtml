@@ -22,7 +22,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Schedule", "App", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -40,5 +39,9 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/app/mainapp.js"></script>
+    <script src="~/Scripts/app/config/main.config.js"></script>
+    <script src="~/Scripts/app/controllers/scheduleController.js"></script>
+    <script src="~/Scripts/app/controllers/dashboardController.js"></script>
 </body>
 </html>
