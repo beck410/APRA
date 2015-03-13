@@ -82,7 +82,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model Tests\PatientModel.cs" />
+    <Compile Include="Model Tests\PatientModelTests.cs" />
+    <Compile Include="Model Tests\PermissionModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
