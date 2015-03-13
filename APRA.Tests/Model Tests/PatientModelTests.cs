@@ -4,7 +4,7 @@ using APRA.Models;
 
 namespace APRA.Tests.Model_Tests {
   [TestClass]
-  public class PatientModel {
+  public class PatientModelTests {
 
     [TestMethod]
     public void AddPatientSuccess() {
