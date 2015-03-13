@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace APRA.Models {
   public class Caretaker {
-
+    [Required]
     public int caretakerId { get; set; }
+    [Required]
     public int PatientId { get; set; } 
     public string ImageLink { get; set; }
     public string Name { get; set; }
@@ -18,7 +20,7 @@ namespace APRA.Models {
     public Caretaker(int patientId, string imageLink, string name, string relationship, string details ) {
 
       _isEmpty(name, relationship);
-
+ 
       this.PatientId = patientId;
       this.ImageLink = imageLink;
       this.Name = name;

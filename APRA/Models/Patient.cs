@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace APRA.Models {
   public class Patient {
-
+    [Required]
     public int PatientId;
+    [Required]
     public string Name;
+    [Required]
     public int UserId;
     public string Location;
 
