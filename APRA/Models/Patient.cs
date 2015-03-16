@@ -6,26 +6,20 @@ using System.Web;
 
 namespace APRA.Models {
   public class Patient {
-    [Required]
-    public int PatientId;
-    [Required]
-    public string Name;
-    [Required]
-    public int UserId;
-    public string Location;
+    public int ID {get; set;}
+    public string Name {get; set;}
+    public string Location {get; set;}
 
-    public Contact Contact { get; set; }
-    public Caretaker Caretaker { get; set; }
     public ICollection<Task> Tasks { get; set; }
 
-    public Patient(string name, string location,int userId) {
-      if (String.IsNullOrWhiteSpace(name))
-        throw new ArgumentException("name is invalid");
-      else
-        this.Name = name;
-      
-      this.Location = location;
-      this.UserId = userId; 
+    public Patient(string name, string location) {
+      //if (String.IsNullOrWhiteSpace(name))
+      //  throw new ArgumentException("name is invalid");
+
+      this.Name = name;
+      this.Location = location; 
     }
+
+    public Patient() { }
   }
 }

@@ -9,7 +9,7 @@ namespace APRA.Tests.Model_Tests {
     public void AddCaretakerSuccess() {
       Caretaker ct = new Caretaker(3,"https://s3-us-west-2.amazonaws.com/apra/84/2015-03-04","Nancy Smith","wife","wearing black pants and white shirt");
 
-      Assert.AreEqual(3,ct.PatientId);
+      Assert.AreEqual(3,ct.PatientID);
       Assert.AreEqual("https://s3-us-west-2.amazonaws.com/apra/84/2015-03-04",ct.ImageLink);
       Assert.AreEqual("Nancy Smith",ct.Name);
       Assert.AreEqual("wife",ct.Relationship);

@@ -6,22 +6,20 @@ using System.Web;
 
 namespace APRA.Models {
   public class Caretaker {
-    [Required]
-    public int caretakerId { get; set; }
-    [Required]
-    public int PatientId { get; set; } 
+    public int ID{ get; set; }
+    public int PatientID { get; set; } 
     public string ImageLink { get; set; }
     public string Name { get; set; }
     public string Relationship { get; set; }
     public string Details { get; set; }
 
-    public Patient patient { get; set; }
+    public Caretaker() {}
 
     public Caretaker(int patientId, string imageLink, string name, string relationship, string details ) {
 
       _isEmpty(name, relationship);
  
-      this.PatientId = patientId;
+      this.PatientID = patientId;
       this.ImageLink = imageLink;
       this.Name = name;
       this.Relationship = relationship;

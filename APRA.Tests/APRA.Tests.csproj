@@ -83,11 +83,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model Tests\PatientModelTests.cs" />
-    <Compile Include="Model Tests\PermissionModelTests.cs" />
     <Compile Include="Model Tests\CaretakerModelTests.cs" />
     <Compile Include="Model Tests\TaskModelTests.cs" />
+    <Compile Include="Model Tests\ContactModelTests.cs" />
+    <Compile Include="Model Tests\PermissionModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="RepoTests\CaretakerRepoTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

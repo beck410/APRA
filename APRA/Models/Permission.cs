@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,21 +7,20 @@ using System.Web;
 namespace APRA.Models {
   public class Permission {
 
-    [Required]
-    public int PermissionId { get; set; }
-    [Required]
-    public int PatientId { get; set; }
+    public int ID { get; set; }
+    public string UserID { get; set; }
     //admin or patient
-    [Required]
     public string Role { get; set; }
 
-    public Permission(int patientId, string role) {
-      this.PatientId = patientId;
+    public Permission() { }
+
+    public Permission(string userId, string role) {
+      this.UserID = userId;
       _checkRoleValidity(role);
     }
 
     private void _checkRoleValidity(string role) {
-      string[] roles = { "admin","patient" };
+      string[] roles = { "admin", "patient" };
 
       if (roles.Contains(role) == true) {
         this.Role = role;
